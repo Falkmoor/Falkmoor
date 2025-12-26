@@ -224,3 +224,8 @@ a:hover {
     padding: 30px 26px;
   }
 }
+@media (max-width: 768px) {
+  .book-wrapper {
+    margin-bottom: 60px;
+  }
+}

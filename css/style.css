@@ -128,7 +128,7 @@ a:hover {
 /* ===================== */
 .book-wrapper {
   max-width: 460px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
 }
 
 .book-cover {

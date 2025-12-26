@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Impressum & Rechtliches – MarlonPress</title>
+
+  <!-- Nicht indexieren, aber Links folgen -->
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- Gemeinsames Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+<!-- RÜCKLINK ZUR HAUPTSEITE -->
+<header class="legal-header">
+  <!-- WICHTIG: anpassen, falls dein Repo anders heißt -->
+  <a href="/" class="legal-back">← Zurück zur Website</a>
+</header>
+
+<section class="section">
+  <div class="impressum-box">
+
+    <h1>Impressum & Rechtliches</h1>
+
+    <!-- ===================== -->
+    <!-- IMPRESSUM -->
+    <!-- ===================== -->
+    <h2>Impressum</h2>
+
+    <p>
+      <strong>MarlonPress</strong><br />
+      Marlon Falkmoor
+    </p>
+
+    <h3>Inhaber</h3>
+    <p>
+      Michael Vollmer<br />
+      Öechelhäuserstr. 8<br />
+      40235 Düsseldorf<br />
+      Deutschland
+    </p>
+
+    <h3>Kontakt</h3>
+    <p>
+      E-Mail:
+      <a href="mailto:staff.fksw@yahoo.de">staff.fksw@yahoo.de</a>
+    </p>
+
+    <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+    <p>
+      Michael Vollmer<br />
+      Anschrift wie oben
+    </p>
+
+    <hr />
+
+    <!-- ===================== -->
+    <!-- URHEBERRECHT -->
+    <!-- ===================== -->
+    <h2>Urheberrecht</h2>
+    <p>
+      Die auf dieser Website veröffentlichten Inhalte und Werke unterliegen dem
+      deutschen Urheberrecht. Jede Art der Verwertung außerhalb der Grenzen des
+      Urheberrechts bedarf der vorherigen schriftlichen Zustimmung des jeweiligen
+      Rechteinhabers.
+    </p>
+
+    <hr />
+
+    <!-- ===================== -->
+    <!-- HAFTUNG FÜR INHALTE -->
+    <!-- ===================== -->
+    <h2>Haftung für Inhalte</h2>
+    <p>
+      Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die
+      Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir
+      jedoch keine Gewähr. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für
+      eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
+      verantwortlich.
+    </p>
+
+    <!-- ===================== -->
+    <!-- HAFTUNG FÜR LINKS -->
+    <!-- ===================== -->
+    <h2>Haftung für Links</h2>
+    <p>
+      Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte
+      wir keinen Einfluss haben. Für diese fremden Inhalte übernehmen wir daher
+      keine Gewähr. Für die Inhalte der verlinkten Seiten ist stets der jeweilige
+      Anbieter oder Betreiber der Seiten verantwortlich.
+    </p>
+
+    <hr />
+
+    <!-- ===================== -->
+    <!-- DATENSCHUTZ -->
+    <!-- ===================== -->
+    <h2>Datenschutz</h2>
+    <p>
+      Diese Website erhebt und verarbeitet keine personenbezogenen Daten aktiv.
+      Es werden keine Cookies, Analyse- oder Tracking-Tools eingesetzt.
+    </p>
+
+    <p>
+      Beim Besuch dieser Website können durch den Hosting-Anbieter (GitHub Pages)
+      technisch notwendige Zugriffsdaten (z. B. IP-Adresse, Datum und Uhrzeit des
+      Zugriffs) erhoben werden, auf die der Seitenbetreiber keinen Einfluss hat.
+    </p>
+
+    <p>
+      Eine Weitergabe dieser Daten an Dritte erfolgt nicht.
+    </p>
+
+  </div>
+</section>
+
+</body>
+</html>

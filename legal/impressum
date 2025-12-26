@@ -18,7 +18,7 @@
 <!-- RÜCKLINK ZUR HAUPTSEITE -->
 <header class="legal-header">
   <!-- WICHTIG: anpassen, falls dein Repo anders heißt -->
-  <a href="/" class="legal-back">← Zurück zur Website</a>
+  <a href="../" class="legal-back">← Zurück zur Website</a>
 </header>
 
 <section class="section">

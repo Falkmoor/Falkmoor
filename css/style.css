@@ -1,220 +1,215 @@
-:root {
-  --bg-main: #0b0b0f;
-  --bg-soft: #141418;
-  --text-main: #e6e6e6;
-  --text-soft: #b5b5b5;
-  --accent-gold: #c9b48a;
-}
-
+/* ===================== */
 /* RESET */
+/* ===================== */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
+/* ===================== */
+/* BASE */
+/* ===================== */
 body {
-  background: var(--bg-main);
-  color: var(--text-main);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Arial, sans-serif;
-  line-height: 1.7;
+  background: #0b132b;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===================== */
 /* HERO */
+/* ===================== */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(ellipse at center, #1a1a1f 0%, #0b0b0f 70%);
+  padding: 32px 20px;
+  background: linear-gradient(
+    rgba(11, 19, 43, 0.85),
+    rgba(11, 19, 43, 0.95)
+  );
 }
 
 .hero-inner {
+  max-width: 900px;
   text-align: center;
-  padding: 40px 24px;
 }
 
-.hero-logo {
-  max-width: 560px;
+/* LOGO */
+.site-logo {
+  display: block;
+  margin: 0 auto 28px;
   width: 100%;
+  max-width: 300px; /* Desktop */
   height: auto;
+}
+
+/* HERO TEXT */
+.hero-claim {
+  font-size: 1.15rem;
+  color: #e0e0e0;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ===================== */
+/* SECTIONS */
+/* ===================== */
+.section {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.section.dark {
+  background: #1c2541;
+}
+
+.section h2 {
+  font-size: 2.1rem;
   margin-bottom: 28px;
 }
 
-.hero-claim {
-  max-width: 720px;
+/* ===================== */
+/* TEXT BOX */
+/* ===================== */
+.text-box {
+  max-width: 820px;
   margin: 0 auto;
+  padding: 36px 40px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 22px;
+}
+
+.text-box p {
+  margin-bottom: 18px;
   font-size: 1.05rem;
-  opacity: 0.8;
+  color: #f1f1f1;
 }
 
-/* SECTIONS */
-.section {
-  padding: 120px 24px;
-  text-align: center;
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 
-/* FEATURED BOOK */
-.featured-book {
-  background: var(--bg-soft);
-}
-
-.featured-grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.featured-cover img {
-  width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
-}
-
-.featured-content h2 {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  opacity: 0.6;
-}
-
-.featured-content h3 {
-  font-size: 2rem;
-  margin: 18px 0;
-}
-
-.featured-content h3 span {
-  font-weight: 400;
-  opacity: 0.75;
-}
-
-.featured-desc {
-  max-width: 520px;
-  margin: 0 auto 18px;
-}
-
-.featured-lang {
+.imprint-note {
+  margin-top: 24px;
   font-size: 0.95rem;
-  opacity: 0.7;
-  margin-bottom: 26px;
+  color: #cccccc;
 }
 
-.featured-links {
-  display: flex;
-  gap: 18px;
-  justify-content: center;
+/* ===================== */
+/* BOOK */
+/* ===================== */
+.book-wrapper {
+  max-width: 420px;
+  margin: 0 auto;
 }
 
+.book-cover {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 22px;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+
+.book-wrapper h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.book-wrapper p {
+  font-size: 1rem;
+  margin-bottom: 22px;
+  color: #e6e6e6;
+}
+
+/* ===================== */
 /* BUTTONS */
+/* ===================== */
 .btn {
+  display: inline-block;
   padding: 12px 26px;
   border-radius: 999px;
   font-weight: 600;
-  text-decoration: none;
+  font-size: 0.95rem;
+  background: #e63946;
+  color: #fff;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.btn.primary {
-  background: var(--accent-gold);
-  color: #0b0b0f;
+.btn:hover {
+  background: #d62839;
+  transform: translateY(-2px);
 }
 
-.btn.secondary {
-  border: 1px solid var(--accent-gold);
-  color: var(--accent-gold);
-}
-
-/* BOOKS */
+/* ===================== */
+/* BOOK LIST */
+/* ===================== */
 .book-item {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 28px 32px;
-  background: rgba(255,255,255,0.04);
-  border-radius: 18px;
+  margin-bottom: 22px;
 }
 
-.book-links {
-  margin-top: 14px;
-  display: flex;
-  gap: 16px;
-  justify-content: center;
+.book-item h4 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
 }
 
-.book-links a {
-  color: var(--accent-gold);
-  text-decoration: none;
+.book-item p {
+  font-size: 0.95rem;
+  color: #cccccc;
 }
 
-/* AUTHOR */
-.imprint-note {
-  margin-top: 32px;
-  opacity: 0.75;
+/* ===================== */
+/* SOCIAL */
+/* ===================== */
+.social-links a {
+  font-weight: 600;
+  color: #e63946;
 }
 
+/* ===================== */
 /* FOOTER */
+/* ===================== */
 .footer {
-  padding: 40px 20px;
+  padding: 32px 20px;
+  background: #000;
   text-align: center;
   font-size: 0.9rem;
-  opacity: 0.8;
 }
 
 .footer a {
-  color: var(--accent-gold);
-  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  color: #cccccc;
 }
 
+/* ===================== */
 /* MOBILE */
-@media (max-width: 900px) {
-  .featured-grid {
-    grid-template-columns: 1fr;
+/* ===================== */
+@media (max-width: 600px) {
+  .site-logo {
+    max-width: 220px; /* Handy */
+    margin-bottom: 22px;
   }
-}
-/* LEGAL HEADER */
-.legal-header {
-  padding: 24px;
-}
 
-.legal-back {
-  color: var(--accent-gold);
-  text-decoration: none;
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
+  .section {
+    padding: 70px 18px;
+  }
 
-.legal-back:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
+  .section h2 {
+    font-size: 1.8rem;
+  }
 
-/* IMPRESSUM BOX */
-.impressum-box {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.impressum-box h1 {
-  margin-bottom: 40px;
-}
-
-.impressum-box h2 {
-  margin-top: 48px;
-  margin-bottom: 16px;
-}
-
-.impressum-box p {
-  background: rgba(255,255,255,0.04);
-  padding: 26px 30px;
-  border-radius: 20px;
-  margin-bottom: 18px;
-}
-
-.impressum-box hr {
-  border: none;
-  height: 1px;
-  background: rgba(255,255,255,0.12);
-  margin: 50px 0;
+  .text-box {
+    padding: 26px 22px;
+  }
 }

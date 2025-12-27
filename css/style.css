@@ -1,27 +1,21 @@
-/* ===================== */
 /* RESET */
-/* ===================== */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ===================== */
-/* COLOR SYSTEM (LOGO) */
-/* ===================== */
+/* COLOR SYSTEM (LOGO-ORIENTIERT) */
 :root {
-  --bg-main: #0f0f12;        /* dunkles Anthrazit */
-  --bg-section: #16161c;     /* leicht heller */
-  --gold-main: #d6c28a;      /* Logo-Gold */
+  --bg-main: #0f0f12;
+  --bg-section: #16161c;
+  --gold-main: #d6c28a;
   --gold-soft: #b9a76f;
   --text-main: #f2f2f2;
   --text-muted: #cfcfcf;
 }
 
-/* ===================== */
 /* BASE */
-/* ===================== */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Arial, sans-serif;
@@ -39,20 +33,14 @@ a:hover {
   color: var(--gold-soft);
 }
 
-/* ===================== */
 /* HERO */
-/* ===================== */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 60px 24px;
-  background: radial-gradient(
-    circle at top,
-    #1b1b22 0%,
-    var(--bg-main) 70%
-  );
+  background: radial-gradient(circle at top, #1b1b22 0%, var(--bg-main) 70%);
 }
 
 .hero-inner {
@@ -60,20 +48,16 @@ a:hover {
   text-align: center;
 }
 
-/* ===================== */
-/* LOGO – JETZT RICHTIG */
-/* ===================== */
+/* LOGO */
 .site-logo {
   display: block;
   margin: 0 auto 36px;
   width: 100%;
-  max-width: 720px;   /* DESKTOP: groß & präsent */
+  max-width: 720px;
   height: auto;
 }
 
-/* ===================== */
 /* HERO TEXT */
-/* ===================== */
 .hero-claim {
   font-size: 1.2rem;
   color: var(--text-muted);
@@ -81,9 +65,7 @@ a:hover {
   margin: 0 auto;
 }
 
-/* ===================== */
 /* SECTIONS */
-/* ===================== */
 .section {
   padding: 100px 24px;
   text-align: center;
@@ -95,37 +77,11 @@ a:hover {
 
 .section h2 {
   font-size: 2.2rem;
-  margin-bottom: 36px;
+  margin-bottom: 48px;
   color: var(--gold-main);
-  letter-spacing: 0.5px;
 }
 
-/* ===================== */
-/* TEXT BOX */
-/* ===================== */
-.text-box {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 42px 46px;
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 26px;
-}
-
-.text-box p {
-  margin-bottom: 20px;
-  font-size: 1.05rem;
-  color: var(--text-main);
-}
-
-.imprint-note {
-  margin-top: 28px;
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-
-/* ===================== */
-/* BOOK */
-/* ===================== */
+/* BOOKS */
 .book-wrapper {
   max-width: 460px;
   margin: 0 auto 80px;
@@ -134,7 +90,7 @@ a:hover {
 .book-cover {
   width: 100%;
   max-width: 320px;
-  margin: 0 auto 26px;
+  margin: 0 auto 22px;
   display: block;
   border-radius: 18px;
   box-shadow: 0 22px 50px rgba(0, 0, 0, 0.65);
@@ -142,18 +98,10 @@ a:hover {
 
 .book-wrapper h3 {
   font-size: 1.35rem;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
-.book-wrapper p {
-  font-size: 1rem;
-  margin-bottom: 26px;
-  color: var(--text-muted);
-}
-
-/* ===================== */
 /* BUTTON */
-/* ===================== */
 .btn {
   display: inline-block;
   padding: 14px 34px;
@@ -170,26 +118,26 @@ a:hover {
   transform: translateY(-2px);
 }
 
-/* ===================== */
-/* BOOK LIST */
-/* ===================== */
-.book-item {
-  margin-bottom: 26px;
+/* TEXT BOX */
+.text-box {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 42px 46px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 26px;
 }
 
-.book-item h4 {
-  font-size: 1.2rem;
-  margin-bottom: 6px;
+.text-box p {
+  margin-bottom: 20px;
 }
 
-.book-item p {
+.imprint-note {
+  margin-top: 28px;
   font-size: 0.95rem;
   color: var(--text-muted);
 }
 
-/* ===================== */
 /* FOOTER */
-/* ===================== */
 .footer {
   padding: 36px 24px;
   background: #0b0b0e;
@@ -198,33 +146,22 @@ a:hover {
   color: var(--text-muted);
 }
 
-.footer a {
-  display: inline-block;
-  margin-top: 12px;
+/* ACCESSIBILITY */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
 }
 
-/* ===================== */
 /* MOBILE */
-/* ===================== */
 @media (max-width: 768px) {
   .site-logo {
-    max-width: 420px; /* Handy: immer noch stark */
-    margin-bottom: 28px;
+    max-width: 420px;
   }
 
   .section {
     padding: 80px 20px;
   }
 
-  .section h2 {
-    font-size: 1.9rem;
-  }
-
-  .text-box {
-    padding: 30px 26px;
-  }
-}
-@media (max-width: 768px) {
   .book-wrapper {
     margin-bottom: 60px;
   }

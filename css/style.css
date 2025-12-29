@@ -41,7 +41,9 @@ a {
 }
 
 .site-logo {
-  max-width: 640px;
+  max-width: 420px;
+  width: 100%;
+  height: auto;
   margin-bottom: 36px;
 }
 
@@ -153,4 +155,9 @@ a {
 .visually-hidden {
   position: absolute;
   left: -9999px;
+}
+@media (max-width: 768px) {
+  .site-logo {
+    max-width: 300px;
+  }
 }

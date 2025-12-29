@@ -71,6 +71,7 @@ a {
   color: var(--gold-main);
 }
 
+/* FEATURED BOOKS */
 .book {
   max-width: 320px;
   margin: 0 auto 70px;
@@ -101,6 +102,38 @@ a {
   background: var(--gold-soft);
 }
 
+/* BACKLIST */
+.book-list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.book-item {
+  margin-bottom: 40px;
+}
+
+.book-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.book-sub {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.book-links a {
+  font-size: 0.9rem;
+  margin-right: 18px;
+  color: var(--gold-main);
+}
+
+.book-links a:hover {
+  color: var(--gold-soft);
+}
+
+/* AUTHOR */
 .text-box {
   max-width: 720px;
   margin: 0 auto;
